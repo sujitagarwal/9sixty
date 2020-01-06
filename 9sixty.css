@@ -1,0 +1,109 @@
+/**********************************************************************************
+
+  Project Name: 9sixty CSS Grid
+  Project Description: A simple quick to use 960 Px fixed non-responsive grid system
+  File Name: 9sixty.css
+  Author: Sujit Agarwal
+  Version: 1.0
+  
+**********************************************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.justify { text-align: justify; }
+
+.left { text-align: left; }
+.right { text-align: right; }
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-twelve { width: 96%; }
+.column-one { width: 4.33%; }
+.column-two { width: 12.66%; }
+.column-three { width: 21%; }
+.column-four { width: 29.33%; }
+.column-five { width: 37.66%; }
+.column-six { width: 46%; }
+.column-seven { width: 54.33%; }
+.column-eight { width: 62.66%; }
+.column-nine { width: 71%; }
+.column-ten { width: 79.33%; }
+.column-eleven { width: 87.66%; }
+.column-twelve { width: 96%; }
+.hidden { display: none; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
